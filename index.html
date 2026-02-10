@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>KATOR | Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="./IMG/logo.png">
+    <link rel="apple-touch-icon" sizes="100x100" href="./IMG/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+</head> 
+<body>
+    <div class="container">
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="./IMG/logo.png" alt="logo">
+                    <h2>KA<span class="danger">TOR</span></h2>
+                </div>
+                <div class="close">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+             <div class="sidebar">
+                <a class="active" href="#">
+                    <span class="material-symbols-outlined">account_box</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>User</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">history</span>
+                    <h3>History</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">all_inbox</span>
+                    <h3>Message</h3>
+                    <span class="message-count">15</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <h3>Sale list</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">assignment</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Setting</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Log out</h3>
+                </a>
+             </div>   
+        </aside>
+
+        <main>
+            <h1>Analytics</h1>
+            <div class="analytics">
+                <div class="banner">
+                    <div class="status">
+                        <h3>Total Sale</h3>
+                        <h1>$65,074</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>+85%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="status">
+                        <h3>Visiters</h3>
+                        <h1>25,680</h1>
+                    </div>
+                    <div class="progress p-v">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>-30%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner">
+                    <div class="status">
+                        <h3>Searchers</h3>
+                        <h1>16,428</h1>
+                    </div>
+                    <div class="progress p-s">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                            <p>+22%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Admin">
+                <h2>Administrators</h2>
+                <div class="adminlist">
+                    <div class="profile">
+                        <img src="./IMG/p1.jpg" alt="p1">
+                        <b>James</b>
+                        <p>1 Hours Ago</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./IMG/p2.jpg" alt="p2">
+                        <b>Dream</b>
+                        <p>8 Hours Ago</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./IMG/p3.jpg" alt="p3">
+                        <b>Mark</b>
+                        <p>2 Hours Ago</p>
+                    </div>
+                    <div class="profile">
+                        <img src="./IMG/p4.jpg" alt="p4">
+                        <b>Alice</b>
+                        <p>5 Hours Ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="start">Product Name</th>
+                            <th>Product Number</th>
+                            <th>Stock Status</th>
+                            <th>Payment Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-list">
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        
+        <div class="right">
+            <div class="top">
+                <div class="nav">
+                    <button id="menu-btn">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+                <div class="mode">
+                    <button id="light">
+                        <span class="material-symbols-outlined active">sunny</span>
+                    </button>
+                    <button id="dark">
+                        <span class="material-symbols-outlined">bedtime</span>
+                    </button>
+                </div>
+                <div class="user">
+                    <div class="info">
+                        <p>Hey, <b>Mr.AD</b></p>
+                        <small class="text-muted">Admin: User</small>
+                    </div>
+                    <div class="user-profile">
+                        <img src="./IMG/u.jpg" alt="User">
+                    </div>
+                </div>
+            </div> 
+            <div class="user-info">
+                <div class="user-logo">
+                    <img src="./IMG/logo.png" alt="userlogo">
+                    <h2>KATOR</h2>
+                    <p>Dashboard</p> 
+                </div>
+            </div>
+
+            <div class="remind">
+                <div class="head">
+                    <h2>Reminders</h2>
+                    <span class="material-symbols-outlined">calendar_check</span>
+                </div>
+                <div class="reimis-container">
+                    <div class="noti">
+                        <div class="icon">
+                            <span class="material-symbols-outlined">volume_down</span>
+                        </div>
+                        <div class="content">
+                            <h3>Workshop</h3>
+                            <small class="text-muted">08-00 AM - 12-00 PM</small>
+                        </div>
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+
+                    <div class="noti deact">
+                        <div class="icon icon-d">
+                            <span class="material-symbols-outlined">edit</span>
+                        </div>
+                        <div class="content">
+                            <h3>Deactive</h3>
+                            <small class="text-muted">12-00 AM - 02-00 PM</small>
+                        </div>
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+
+                    <div class="noti add">
+                            <span class="material-symbols-outlined">add</span>
+                            <h3>Add Reminders</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
